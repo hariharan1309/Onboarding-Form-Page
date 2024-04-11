@@ -1,5 +1,6 @@
-# This project has a Create Account page with some basic required questions followed with it on the next page.
-
+# This project has a Create Account page with some basic required questions on the next page.
+## Live Link - https://main--onboarding-page-sample.netlify.app/
+## For Styling I have used the Tailwind CSS.
 
 # React + TypeScript + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
