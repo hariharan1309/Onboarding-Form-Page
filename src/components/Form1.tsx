@@ -78,7 +78,7 @@ export default function Form1({ nextPage }: { nextPage: React.Dispatch<React.Set
             <label htmlFor="fullName">Full Name</label>
             <input
               type="text" id='fullName'
-              className={`outline-none ring-1 w-72 p-2 rounded-[4px] ${
+              className={`outline-none ring-1 focus:ring-2 w-72 p-2 rounded-[4px] ${
                 error.name.length > 0 ? 'ring-red-500' : 'ring-slate-500'
               }`}
               onBlur={() => checkError({ type: 'name' })}
@@ -90,7 +90,7 @@ export default function Form1({ nextPage }: { nextPage: React.Dispatch<React.Set
             <label htmlFor="email">Email Address</label>
             <input
               type="text" id='email'
-              className={`outline-none ring-1 w-72 p-2 rounded-[4px] ${
+              className={`outline-none ring-1 focus:ring-2 w-72 p-2 rounded-[4px] ${
                 error.email.length > 0 ? 'ring-red-500' : 'ring-slate-500'
               }`}
               onBlur={() => checkError({ type: 'email' })}
@@ -102,7 +102,7 @@ export default function Form1({ nextPage }: { nextPage: React.Dispatch<React.Set
             <label htmlFor="Pass">Password</label>
             <input
               type="password" id='Pass'
-              className={`outline-none ring-1 w-72 p-2 rounded-[4px] ${
+              className={`outline-none ring-1 focus:ring-2 w-72 p-2 rounded-[4px] ${
                 error.pass.length > 0 ? 'ring-red-500' : 'ring-slate-500'
               }`}
               onBlur={() => checkError({ type: 'pass' })}
@@ -114,7 +114,7 @@ export default function Form1({ nextPage }: { nextPage: React.Dispatch<React.Set
             <label htmlFor="Repass">Confirm Password</label>
             <input
               type="password" id='Repass'
-              className={`outline-none ring-1 w-72 p-2 rounded-[4px] ${
+              className={`outline-none ring-1 focus:ring-2 w-72 p-2 rounded-[4px] ${
                 error.repass.length > 0 ? 'ring-red-500' : 'ring-slate-500'
               }`}
               onBlur={() => checkError({ type: 'repass' })}

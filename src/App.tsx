@@ -17,16 +17,22 @@ export default function App() {
         })};
  
   return (
-    <main className="w-full max-h-full relative transition-transform duration-300 overflow-hidden">
+    <main className="w-full max-h-full relative overflow-x-hidden">
       <Progress value={pageIndex} />
-      <div className="w-full max-h-[100vh]  flex overflow-visible" style={{ transform: `translateX(-${pageIndex * 100}%)`} }>
-       <div className="flex flex-col w-full  shrink-0 grow-0">
+      <div className="w-full max-h-[100vh] transition-transform duration-300  flex " style={{ transform: `translateX(-${pageIndex * 100}%)`} }>
+       <div className="flex flex-col w-full  shrink-0 grow-0 overflow-y-hidden">
         <Form1 nextPage={nextPage} />
+        
        </div>
-        <div className="flex flex-col w-full  shrink-0 grow-0 overflow-x-hidden">
+        <div className="flex flex-col w-full  shrink-0 grow-0 overflow-x-hidden relative">
           <Form2 nextPage={nextPage}/>
+          <div className="absolute text-white top-[50%] right-0 z-30 text-center">
+              <button className="bg-slate-800 rounded-md px-5 py-3 my-3 mx-5 flex items-center justify-between gap-2  ">
+              <img src="/images/question.png" alt="" className="w-5 h-5 bg-white rounded-full" />
+              <span>Hello</span></button>
+          </div>
         </div>
-      <div className="flex flex-col w-full  shrink-0 grow-0 overflow-x-hidden">
+      <div className="flex flex-col w-full h-full  shrink-0 grow-0 overflow-y-hidden">
         <Submit/>
        </div>
       </div>

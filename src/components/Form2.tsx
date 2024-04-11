@@ -78,7 +78,7 @@ const CheckBoxValues=[
 
 export default function Form2({ nextPage }: { nextPage: () => void}) {
   return (
-    <section className="border-t-2 border-green-500 flex flex-col mx-auto gap-5 py-5 w-[min(600px,80%)] relative">
+    <section className="border-t-2flex flex-col mx-auto gap-5 py-5 w-[min(600px,80%)]">
       <div className="flex items-start justify-start">
         <Header2 />
       </div>
