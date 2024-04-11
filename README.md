@@ -1,5 +1,7 @@
-# React + TypeScript + Vite
+# This project has a Create Account page with some basic required questions followed with it on the next page.
 
+
+# React + TypeScript + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
